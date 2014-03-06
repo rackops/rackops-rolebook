@@ -14,7 +14,7 @@ critical_recipes = %W[
 ]
 
 if node['rackops_rolebook']['include_acl'] == true
-  critical_recipes.push('rackops_rolebook::acl')
+  critical_recipes.push('rackops-rolebook::acl')
 end
 
 # Only include chef-client in client mode.
